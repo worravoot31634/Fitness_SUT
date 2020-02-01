@@ -18,14 +18,14 @@
 			</a></div>
 		<div id="ellipse_13"></div>
 		<img src="skins/sut.png" id="sut">
-		<a href="vdo.html"><img src="skins/_686.png" id="_686"></a>
-		<img src="skins/_4203.png" id="_4203">
+		<a href="vdo.html"><img src="images/EP1.png" id="_686"></a>
+		<a href="vdo2.html"><img src="images/EP2.png" id="_4203"></a>
 		
 		
 		
 		
 		<div id="_______1_">
-			<span class="char">บทที่ </span> 1 
+			<span style="color: black;" class="char">บทที่ 1</span>
 		</div>
 		
 		<div id="__________________">
@@ -35,7 +35,7 @@
 		
 		
 		<div id="_______2">
-			<span class="char">บทที่ </span> 2
+			<span style="color: black;" class="char">บทที่ 2</span>
 		</div>
 
 		<div id="playbutton">
@@ -62,17 +62,8 @@
 		<div id="____________ek1">
 			<a style="text-decoration: none; color: white;" href="login___1.html"><span class="char">ออกจากระบบ</span>
 			</a></div>
-		<div id="rectangle_461"></div>
-		<div id="rectangle_462"></div>
-		<div id="rectangle_463"></div>
-		<div id="_33_00__60_00">
-			33:00 /60:00
-		</div>
-		<div id="rectangle_464"></div>
-		<div id="rectangle_465"></div>
-		<div id="_00_00__60_00">
-			00:00 /60:00
-		</div>
+		
+		
 		
 		
 		
