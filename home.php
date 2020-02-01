@@ -14,12 +14,12 @@
 		<img src="skins/bg_sport.png" id="bg_sport">
 		<div id="rectangle_452"></div>
 		<div id="___________">
-			<a style="color:white;text-decoration: none;" href="home.html"><span class="char">คอร์สเรียน</span>
+			<a style="color:white;text-decoration: none;" href="home.php"><span class="char">คอร์สเรียน</span>
 			</a></div>
 		<div id="ellipse_13"></div>
 		<img src="skins/sut.png" id="sut">
-		<a href="vdo.html"><img src="images/EP1.png" id="_686"></a>
-		<a href="vdo2.html"><img src="images/EP2.png" id="_4203"></a>
+		<a href="vdo.php"><img src="images/EP1.png" id="_686"></a>
+		<a href="vdo2.php"><img src="images/EP2.png" id="_4203"></a>
 		
 		
 		

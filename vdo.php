@@ -41,7 +41,7 @@ session_start();
 			<div id="rectangle_454"  ></div>
 			<div id="rectangle_452"  ></div>
 			<div id="___________" >
-				<a style="color:white;text-decoration: none;" href="home.html"><span class="char">%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99</span>
+				<a style="color:white;text-decoration: none;" href="home.php"><span class="char">%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99</span>
 				</a></div>
 			<div id="ellipse_13"  ></div>
 			<img src="skins/sut.png" id="sut" />
@@ -54,7 +54,7 @@ session_start();
 				<span class="char">%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88 </span> 1 
 			</div>
 			<div id="listVideo">
-				<a href ="vdo2.html"><img style="cursor: pointer;" onclick = "changeVideo(2)" src="images/EP2.png" id="_4203" />
+				<a href ="vdo2.php"><img style="cursor: pointer;" onclick = "changeVideo(2)" src="images/EP2.png" id="_4203" />
 					</a>
 			</div>
 			

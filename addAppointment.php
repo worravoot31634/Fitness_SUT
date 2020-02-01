@@ -12,7 +12,7 @@ $memberID = $accountID+implode("",$dateSplit);
 $sql = "INSERT INTO appointment(accountID,memberID,dateApp,timeApp)VALUES(".$accountID.",".$memberID.",'".$dateApp."','".$timeApp."') ";
 
 if($conn->query($sql)){
-    header("location:notendcourse.html");
+    header("location:educatedetails.html");
 }else{
     header("location:calendar_enter.html");
 }
