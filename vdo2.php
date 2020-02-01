@@ -15,6 +15,12 @@
  -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+
+<?php
+session_start();
+	$_SESSION['accountID'] = 1;
+	include 'connect.php';
+?>
 	<head>
 		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 		<title>vdo</title>
@@ -70,7 +76,7 @@
 				<span class="char">%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A</span>
 			</div>
 			<div id="____________ek1" >
-				<a href="login___1.html"><span class="char">%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A</span>
+				<a href="login___1.html" style="color:white;text-decoration:none;"><span class="char">ออกจากระบบ</span>
                 </a></div>
 
 		</div>
@@ -78,7 +84,7 @@
 	</body>
 </html>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 	//var vid = document.getElementById("Video1");
 
@@ -92,48 +98,54 @@
 	  vid.currentTime=11;
 	} */
 
-	function changeVideo(num){
-
-		var video = document.getElementById("videoDiv");
-		var text = document.getElementById("_______1_");
-		var text2 = document.getElementById("_______2");
-		var listVideo = document.getElementById("listVideo");
-
-		switch(num) {
-  			case 1:
-			  video.innerHTML = '<video  id="Video1" width="1280" height="510" controls><source  id = "videoTrain" src="Uxjaa1.mp4" type="video/mp4"></video>';
-				text.innerHTML = '<span class="char">บทที่ </span> 1';
-				text2.innerHTML = '<span style="color:black;" class="char">บทที่ 2</span>';
-				listVideo.innerHTML = '<img style="cursor: pointer;" onclick = "changeVideo(2)" src="images/EP2.png" id="_4203" />';
-			  
-
-				break;
-			case 2:
-				video.innerHTML = '<video id="Video2" width="1280" height="510" controls><source  id = "videoTrain" src="Uxjaa2.mp4" type="video/mp4"></video>';
-				text.innerHTML = '<span class="char">บทที่ </span> 2';
-				text2.innerHTML = '<span style="color:black;" class="char">บทที่ 1</span>';
-				listVideo.innerHTML = '<img style="cursor: pointer;" onclick = "changeVideo(1)" src="images/EP1.png" id="_4203" />';
-				break;
-			default:
-				break;
-}
-
-	}
 
 
-
-	/*var vid1 = document.getElementById("Video1");
-
-	vid1.ontimeupdate = function() {
-		console.log(vid1.currentTime);
-	};*/
 	
 
 	var vid2 = document.getElementById("Video2");
 
-	vid2.ontimeupdate = function() {
+	<?php
+
+$sql="SELECT * FROM video WHERE accountID = " . $_SESSION['accountID'];
+$rs=$conn->query($sql);
+$video1 = 0;
+$video2 = 0;
+
+while($row = $rs->fetch_assoc()) {
+	$video1 = $row['video1'];
+	$video2 = $row['video2'];
+	//echo 'alert("'  . $video1 . '");';
+	
+}
+
+echo "vid2.currentTime=" . $video2 . ";";
+?>
+
+vid2.ontimeupdate = function() {
 		console.log(vid2.currentTime);
-	};
+
+		$(document).ready(function() {
+	
+			var userdata = {
+      'time': vid2.currentTime,
+      'accountID': <?php echo $_SESSION['accountID'] ?>,
+    };
+    console.log(userdata);
+
+				$.ajax({
+				type: "POST",
+				url: "updateVideo2.php",
+				data: userdata,
+				success: function(data) {
+					console.log(data);
+				}
+				});
+
+					
+				
+			});
+		
+	}
 
     vid2.onended = function() {
   alert("วิดีโอแรกจบแร้ววว ไปเลือกวันจร้าา");

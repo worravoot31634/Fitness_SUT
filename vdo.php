@@ -16,6 +16,14 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+
+<?php
+session_start();
+	$_SESSION['accountID'] = 1;
+	include 'connect.php';
+?>
+
+
 	<head>
 		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 		<title>vdo</title>
@@ -27,7 +35,7 @@
 
 	</head>
 	<body>
-	echo 'sdfsdfsd';	<div id="content-container" >
+	<div id="content-container" >
 			<div id="_bg__vdo"  ></div>
 			<img src="skins/bg_sport.png" id="bg_sport" />
 			<div id="rectangle_454"  ></div>
@@ -78,7 +86,7 @@
 	</body>
 </html>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 	//var vid = document.getElementById("Video1");
 
@@ -92,47 +100,59 @@
 	  vid.currentTime=11;
 	} */
 
-	function changeVideo(num){
+	
+	var vid1 = document.getElementById("Video1");
 
-		var video = document.getElementById("videoDiv");
-		var text = document.getElementById("_______1_");
-		var text2 = document.getElementById("_______2");
-		var listVideo = document.getElementById("listVideo");
+<?php
 
-		switch(num) {
-  			case 1:
-			  video.innerHTML = '<video  id="Video1" width="1280" height="510" controls><source  id = "videoTrain" src="Uxjaa1.mp4" type="video/mp4"></video>';
-				text.innerHTML = '<span class="char">บทที่ </span> 1';
-				text2.innerHTML = '<span style="color:black;" class="char">บทที่ 2</span>';
-				listVideo.innerHTML = '<img style="cursor: pointer;" onclick = "changeVideo(2)" src="images/EP2.png" id="_4203" />';
-			  
+$sql="SELECT * FROM video WHERE accountID = " . $_SESSION['accountID'];
+$rs=$conn->query($sql);
+$video1 = 0;
+$video2 = 0;
 
-				break;
-			case 2:
-				video.innerHTML = '<video id="Video2" width="1280" height="510" controls><source  id = "videoTrain" src="Uxjaa2.mp4" type="video/mp4"></video>';
-				text.innerHTML = '<span class="char">บทที่ </span> 2';
-				text2.innerHTML = '<span style="color:black;" class="char">บทที่ 1</span>';
-				listVideo.innerHTML = '<img style="cursor: pointer;" onclick = "changeVideo(1)" src="images/EP1.png" id="_4203" />';
-				break;
-			default:
-				break;
+while($row = $rs->fetch_assoc()) {
+	$video1 = $row['video1'];
+	$video2 = $row['video2'];
+	//echo 'alert("'  . $video1 . '");';
+	
 }
 
-	}
+echo "vid1.currentTime=" . $video1 . ";";
 
+?>
 
-
-	var vid1 = document.getElementById("Video1");
+	
 
 	vid1.ontimeupdate = function() {
 		console.log(vid1.currentTime);
-	};
+
+		$(document).ready(function() {
+	
+			var userdata = {
+      'time': vid1.currentTime,
+      'accountID': <?php echo $_SESSION['accountID'] ?>,
+    };
+    console.log(userdata);
+
+				$.ajax({
+				type: "POST",
+				url: "updateVideo1.php",
+				data: userdata,
+				success: function(data) {
+					console.log(data);
+				}
+				});
+
+					
+				
+			});
+		
+	}
 
 	vid1.onended = function() {
   alert("วิดีโอแรกจบแร้ววว ไปต่อ 2 จร้าา");
   window.location.href = 'vdo2.html';
 };
-
 
 
 
