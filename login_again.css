@@ -1,0 +1,182 @@
+/*
+	@name login_again
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; /*overflow-x:hidden;*/ }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1280px; height: 800px; margin-left: auto; margin-right: auto;  }
+
+#_bg__login_again {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 800px;
+	background:rgba(255,255,255,255);
+}
+
+
+#bg_sport {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 800px;
+}
+
+
+#rectangle_453 {
+	opacity:0.80000001192093;
+	top: 177px;
+	left: 385px;
+	width: 508px;
+	height: 508px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#rectangle_452 {
+	opacity:0.30000001192093;
+	top: 0px;
+	left: 0px;
+	width: 1278px;
+	height: 70px;
+	border: 1px solid #f36e29;
+	background:rgba(243,110,41,255);
+}
+
+
+#ellipse_13 {
+	top: 13px;
+	left: 14px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 23px / 23px;
+	-o-border-radius: 23px / 23px;
+	-moz-border-radius: 23px / 23px;
+	-webkit-border-radius: 23px / 23px;
+	border-radius: 23px / 23px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#sut {
+	top: 20px;
+	left: 25px;
+	width: 25px;
+	height: 33px;
+}
+
+
+#log_in_ {
+	top: 232px;
+	left: 529px;
+	width: 197px;
+	height: 124px;
+	font-family: SUT;
+	font-size: 90px;
+	text-align: center;
+	color:#f36e29;
+}
+
+
+#field {
+	top: 433px;
+	left: 439px;
+	width: 398px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#username {
+	top: 403px;
+	left: 439px;
+	width: 91px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek1 {
+	top: 526px;
+	left: 439px;
+	width: 398px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#password {
+	top: 496px;
+	left: 439px;
+	width: 87px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#base {
+	top: 621px;
+	left: 536px;
+	width: 210px;
+	height: 40px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(243,110,41,255);
+}
+
+
+#_______ {
+	top: 626px;
+	left: 614px;
+	width: 49px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#_________________________ {
+	top: 350px;
+	left: 523px;
+	width: 229px;
+	height: 55px;
+	font-family: SUT;
+	font-size: 30px;
+	text-align: center;
+	color:#000000;
+}
+
+
+
+/* Add your custom CSS here */

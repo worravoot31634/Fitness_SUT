@@ -1,0 +1,457 @@
+/*
+	@name vdo
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; /*overflow-x:hidden;*/ }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1280px; height: 800px; margin-left: auto; margin-right: auto;  }
+
+#_bg__vdo {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 800px;
+	background:rgba(255,255,255,255);
+}
+
+
+#bg_sport {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 800px;
+}
+
+
+#rectangle_454 {
+	top: 580px;
+	left: 0px;
+	width: 1278px;
+	height: 218px;
+	border: 1px solid #707070;
+	background:rgba(138,136,136,255);
+}
+
+
+#rectangle_452 {
+	opacity:0.30000001192093;
+	top: 0px;
+	left: 0px;
+	width: 1278px;
+	height: 70px;
+	border: 1px solid #f36e29;
+	background:rgba(243,110,41,255);
+}
+
+
+#___________ {
+	top: 20px;
+	left: 608px;
+	width: 133px;
+	height: 47px;
+	font-family: SUT;
+	font-size: 40px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#ellipse_13 {
+	top: 13px;
+	left: 14px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 23px / 23px;
+	-o-border-radius: 23px / 23px;
+	-moz-border-radius: 23px / 23px;
+	-webkit-border-radius: 23px / 23px;
+	border-radius: 23px / 23px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#sut {
+	top: 20px;
+	left: 25px;
+	width: 25px;
+	height: 33px;
+}
+
+
+#_686 {
+	top: 70px;
+	left: 0px;
+	width: 1280px;
+	height: 510px;
+}
+
+
+#_______1_ {
+	top: 84px;
+	left: 25px;
+	width: 112px;
+	height: 59px;
+	font-family: SUT;
+	font-size: 50px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#_4203 {
+	top: 619px;
+	left: 28px;
+	width: 223px;
+	height: 141px;
+}
+
+
+#_2208 {
+	top: 619px;
+	left: 277px;
+	width: 224px;
+	height: 141px;
+}
+
+
+#_______3 {
+	top: 625px;
+	left: 284px;
+	width: 64px;
+	height: 35px;
+	font-family: SUT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#_______2 {
+	top: 629px;
+	left: 40px;
+	width: 71px;
+	height: 38px;
+	font-family: SUT;
+	font-size: 33px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#_468884_pfz4p2_187 {
+	top: 619px;
+	left: 526px;
+	width: 222px;
+	height: 141px;
+}
+
+
+#og29w80 {
+	top: 619px;
+	left: 774px;
+	width: 224px;
+	height: 141px;
+}
+
+
+#_______5 {
+	top: 625px;
+	left: 782px;
+	width: 65px;
+	height: 35px;
+	font-family: SUT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#_______4 {
+	top: 625px;
+	left: 532px;
+	width: 64px;
+	height: 35px;
+	font-family: SUT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#_707 {
+	top: 619px;
+	left: 1023px;
+	width: 224px;
+	height: 141px;
+}
+
+
+#_______6 {
+	top: 625px;
+	left: 1031px;
+	width: 65px;
+	height: 35px;
+	font-family: SUT;
+	font-size: 30px;
+	text-align: left;
+	color:#ffffff;
+}
+
+#playbutton {
+	top: 666px;
+	left: 114px;
+	width: 50px;
+	height: 50px;
+}
+
+#base {
+	top: 0px;
+	left: 0px;
+	width: 46px;
+	height: 46px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #ffffff;
+	background:rgba(255,255,255,0);
+}
+
+
+#icon {
+	top: 20px;
+	left: 22px;
+	width: 8px;
+	height: 10px;
+}
+
+#playbutton_ek1 {
+	top: 666px;
+	left: 364px;
+	width: 50px;
+	height: 50px;
+}
+
+#base_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 46px;
+	height: 46px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #ffffff;
+	background:rgba(255,255,255,0);
+}
+
+
+#icon_ek1 {
+	top: 20px;
+	left: 22px;
+	width: 8px;
+	height: 10px;
+}
+
+#playbutton_ek2 {
+	top: 666px;
+	left: 615px;
+	width: 50px;
+	height: 50px;
+}
+
+#base_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 46px;
+	height: 46px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #ffffff;
+	background:rgba(255,255,255,0);
+}
+
+
+#icon_ek2 {
+	top: 20px;
+	left: 22px;
+	width: 8px;
+	height: 10px;
+}
+
+#playbutton_ek3 {
+	top: 666px;
+	left: 861px;
+	width: 50px;
+	height: 50px;
+}
+
+#base_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 46px;
+	height: 46px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #ffffff;
+	background:rgba(255,255,255,0);
+}
+
+
+#icon_ek3 {
+	top: 20px;
+	left: 22px;
+	width: 8px;
+	height: 10px;
+}
+
+#playbutton_ek4 {
+	top: 666px;
+	left: 1110px;
+	width: 50px;
+	height: 50px;
+}
+
+#base_ek4 {
+	top: 0px;
+	left: 0px;
+	width: 46px;
+	height: 46px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #ffffff;
+	background:rgba(255,255,255,0);
+}
+
+
+#icon_ek4 {
+	top: 20px;
+	left: 22px;
+	width: 8px;
+	height: 10px;
+}
+
+
+#rectangle_455 {
+	opacity:0.66000002622604;
+	top: 530px;
+	left: 0px;
+	width: 1278px;
+	height: 48px;
+	border: 1px solid #8a8888;
+	background:rgba(138,136,136,255);
+}
+
+
+#rectangle_456 {
+	top: 521px;
+	left: 0px;
+	width: 682px;
+	height: 7px;
+	border: 1px solid #e11515;
+	background:rgba(225,21,21,255);
+}
+
+
+#rectangle_457 {
+	top: 521px;
+	left: 681px;
+	width: 597px;
+	height: 7px;
+	border: 1px solid #928785;
+	background:rgba(146,135,133,255);
+}
+
+
+#_33_00__60_00 {
+	top: 540px;
+	left: 123px;
+	width: 155px;
+	height: 38px;
+	font-family: SUT;
+	font-size: 33px;
+	text-align: left;
+	color:#ffffff;
+}
+
+
+#rectangle_458 {
+	top: 542px;
+	left: 12px;
+	width: 5px;
+	height: 25px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#rectangle_459 {
+	top: 542px;
+	left: 26px;
+	width: 5px;
+	height: 25px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#speaker {
+	top: 536px;
+	left: 60px;
+	width: 35px;
+	height: 35px;
+}
+
+
+#fullscreen {
+	top: 538px;
+	left: 1230px;
+	width: 35px;
+	height: 35px;
+}
+
+
+#___________________ {
+	top: 20px;
+	left: 774px;
+	width: 263px;
+	height: 47px;
+	font-family: SUT;
+	font-size: 40px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+#____________ek1 {
+	top: 20px;
+	left: 1075px;
+	width: 167px;
+	height: 47px;
+	font-family: SUT;
+	font-size: 40px;
+	text-align: center;
+	color:#ffffff;
+}
+
+
+
+/* Add your custom CSS here */

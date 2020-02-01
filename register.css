@@ -1,0 +1,393 @@
+/*
+	@name register
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; /*overflow-x:hidden;*/ }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1280px; height: 800px; margin-left: auto; margin-right: auto;  }
+
+#_bg__register {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 800px;
+	background:rgba(255,255,255,255);
+}
+
+
+#bg_sport {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 800px;
+}
+
+
+#rectangle_453 {
+	opacity:0.80000001192093;
+	top: 98px;
+	left: 305px;
+	width: 669px;
+	height: 669px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#rectangle_452 {
+	opacity:0.30000001192093;
+	top: 0px;
+	left: 0px;
+	width: 1278px;
+	height: 70px;
+	border: 1px solid #f36e29;
+	background:rgba(243,110,41,255);
+}
+
+
+#ellipse_13 {
+	top: 13px;
+	left: 14px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 23px / 23px;
+	-o-border-radius: 23px / 23px;
+	-moz-border-radius: 23px / 23px;
+	-webkit-border-radius: 23px / 23px;
+	border-radius: 23px / 23px;
+	border: 1px solid #ffffff;
+	background:rgba(255,255,255,255);
+}
+
+
+#sut {
+	top: 20px;
+	left: 25px;
+	width: 25px;
+	height: 33px;
+}
+
+
+#register_ {
+	top: 116px;
+	left: 498px;
+	width: 259px;
+	height: 124px;
+	font-family: SUT;
+	font-size: 90px;
+	text-align: center;
+	color:#f36e29;
+}
+
+
+#field {
+	top: 263px;
+	left: 358px;
+	width: 241px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#username {
+	top: 233px;
+	left: 358px;
+	width: 26px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek1 {
+	top: 263px;
+	left: 680px;
+	width: 241px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#password {
+	top: 233px;
+	left: 680px;
+	width: 69px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#base {
+	top: 706px;
+	left: 536px;
+	width: 210px;
+	height: 40px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(243,110,41,255);
+}
+
+
+#_______ {
+	top: 711px;
+	left: 614px;
+	width: 49px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: center;
+	color:#ffffff;
+}
+
+#error_dropdown {
+	top: 344px;
+	left: 679px;
+	width: 246px;
+	height: 40px;
+}
+
+#field_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 242px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#select_ {
+	top: 12px;
+	left: 16px;
+	width: 54px;
+	height: 18px;
+	font-family: Helvetica;
+	font-size: 13px;
+	text-align: left;
+	color:#a6adb4;
+}
+
+#dropdown {
+	top: 17px;
+	left: 220px;
+	width: 10px;
+	height: 6px;
+}
+
+#dropdown_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 6px;
+}
+
+
+#password_ek1 {
+	top: 314px;
+	left: 680px;
+	width: 60px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek3 {
+	top: 344px;
+	left: 356.61013793945px;
+	width: 245.27359008789px;
+	height: 40px;
+}
+
+
+#password_ek2 {
+	top: 314px;
+	left: 357px;
+	width: 120px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 22px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#password_ek3 {
+	top: 352px;
+	left: 368px;
+	width: 15px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#password_ek4 {
+	top: 352px;
+	left: 580px;
+	width: 15px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#password_ek5 {
+	top: 352px;
+	left: 411px;
+	width: 141px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek4 {
+	top: 427px;
+	left: 357px;
+	width: 241px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#password_ek6 {
+	top: 397px;
+	left: 357px;
+	width: 174px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek5 {
+	top: 503px;
+	left: 357px;
+	width: 241px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#password_ek7 {
+	top: 473px;
+	left: 357px;
+	width: 52px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek6 {
+	top: 427px;
+	left: 679px;
+	width: 241px;
+	height: 36px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#password_ek8 {
+	top: 397px;
+	left: 679px;
+	width: 134px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#field_ek7 {
+	top: 579px;
+	left: 357px;
+	width: 563px;
+	height: 87px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid #f36e29;
+	background:rgba(255,255,255,255);
+}
+
+
+#password_ek9 {
+	top: 549px;
+	left: 357px;
+	width: 37px;
+	height: 29px;
+	font-family: SUT;
+	font-size: 25px;
+	text-align: left;
+	color:#000000;
+}
+
+
+
+/* Add your custom CSS here */
