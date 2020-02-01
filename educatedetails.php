@@ -76,7 +76,7 @@ $row = $rs->fetch_assoc();
 			<div id="_2________2563" >
 			<?php $dateApp =  $row["dateApp"];
 			$date = new DateTime($dateApp);
-				echo $date->format("j F yy");
+				echo $date->format("j")."<span class='char' style='font-size:25px;'>".$date->format(" F ")."</span>".$date->format("yy");
 			?>
 			</div>
 			<div id="_112" >
