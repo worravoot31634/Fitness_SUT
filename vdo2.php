@@ -18,7 +18,7 @@
 
 <?php
 session_start();
-	$_SESSION['accountID'] = 1;
+	//$_SESSION['accountID'] = 1;
 	include 'connect.php';
 ?>
 	<head>
@@ -119,6 +119,15 @@ while($row = $rs->fetch_assoc()) {
 }
 
 echo "vid2.currentTime=" . $video2 . ";";
+
+if($video2 >= 437){
+    echo 'if (confirm("คุณดูครบหมดแล้ว ต้องการเลือกวันอบรมหรือไม่")){
+		window.location.href = "calendar_enter.html";
+	}else{
+		vid2.currentTime = 435;
+	}';
+}
+
 ?>
 
 vid2.ontimeupdate = function() {
@@ -148,8 +157,11 @@ vid2.ontimeupdate = function() {
 	}
 
     vid2.onended = function() {
-  alert("วิดีโอแรกจบแร้ววว ไปเลือกวันจร้าา");
-  window.location.href = 'calendar_enter.html';
+		if (confirm("คุณดูครบหมดแล้ว ต้องการเลือกวันอบรมหรือไม่")){
+		window.location.href = "calendar_enter.html";
+	}else{
+		vid2.currentTime = 435;
+	}
 };
 
 

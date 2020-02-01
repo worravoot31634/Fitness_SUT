@@ -19,7 +19,7 @@
 
 <?php
 session_start();
-	$_SESSION['accountID'] = 1;
+	//$_SESSION['accountID'] = 1;
 	include 'connect.php';
 ?>
 
@@ -119,6 +119,14 @@ while($row = $rs->fetch_assoc()) {
 
 echo "vid1.currentTime=" . $video1 . ";";
 
+if($video1 >= 76){
+    echo 'if (confirm("คุณดูตอนที่ 1 เสร็จแล้ว ต้องการไปยังตอนที่ 2 หรือไม่")){
+		window.location.href = "vdo2.php";
+	}else{
+		vid1.currentTime = 74;
+	}';
+}
+
 ?>
 
 	
@@ -135,12 +143,12 @@ echo "vid1.currentTime=" . $video1 . ";";
     console.log(userdata);
 
 				$.ajax({
-				type: "POST",
-				url: "updateVideo1.php",
-				data: userdata,
-				success: function(data) {
-					console.log(data);
-				}
+					type: "POST",
+					url: "updateVideo1.php",
+					data: userdata,
+					success: function(data) {
+						console.log(data);
+					}
 				});
 
 					
@@ -150,8 +158,10 @@ echo "vid1.currentTime=" . $video1 . ";";
 	}
 
 	vid1.onended = function() {
-  alert("วิดีโอแรกจบแร้ววว ไปต่อ 2 จร้าา");
-  window.location.href = 'vdo2.html';
+		if (confirm("คุณดูตอนที่ 1 เสร็จแล้ว ต้องการไปยังตอนที่ 2 หรือไม่")){
+		window.location.href = "vdo2.php";
+	}else{
+	}
 };
 
 
