@@ -36,6 +36,7 @@
 			<div id="register_" >
 				Register<br/>
 			</div>
+			<form action="addNewAccount.php" method="POST" enctype="multipart/form-data">
 			<div id="field"  >
 				<input id="field" type="text" name="firstname">
 			</div>
@@ -58,9 +59,9 @@
 			<div id="error_dropdown"  >
 				<div id=""  >
 					<select id="field_ek2" name="typeRegister">
-						<option value="0">นักศึกษา</option>
-						<option value="1">บุคลากร</option>
-						<option value="2">บุคคลภายนอก</option>
+						<option value="student">นักศึกษา</option>
+						<option value="employee">บุคลากร</option>
+						<option value="stanger">บุคคลภายนอก</option>
 					</select>
 				</div>
 				
@@ -94,7 +95,9 @@
 			<div id="password_ek6" >
 				<span class="char">%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%8A%E0%B8%99</span>
 			</div>
-			<div id="field_ek5"  ></div>
+			<div id="field_ek5"  >
+				<input type="email" name="email" id="field_ek5">
+			</div>
 			<div id="password_ek7" >
 				Email
 			</div>
@@ -105,7 +108,7 @@
 				<span class="char">%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%A8%E0%B8%B1%E0%B8%9E%E0%B8%97%E0%B9%8C</span>
 			</div>
 			<div id="field_ek7"  >
-				<textarea id = "field_ek7"></textarea>
+				<textarea id = "field_ek7" name="address"></textarea>
 
 			</div>
 			<div id="password_ek9" >
@@ -113,6 +116,7 @@
 			</div>
 
 		</div>
+	</form>
 		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
 	</body>
 </html>
