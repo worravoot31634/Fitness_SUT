@@ -57,7 +57,7 @@
 		
 		
 		<div id="___________________">
-			<a style="text-decoration: none; color: white;" href="educatedetails.html"><span class="char">รายละเอียดวันทดสอบ</span>
+			<a style="text-decoration: none; color: white;" href="educatedetails.php"><span class="char">รายละเอียดวันทดสอบ</span>
 			</a></div>
 		<div id="____________ek1">
 			<a style="text-decoration: none; color: white;" href="login___1.html"><span class="char">ออกจากระบบ</span>

@@ -13,6 +13,20 @@
  *
 */
  -->
+ 
+ <?php 
+ 
+ session_start();
+
+ include("connect.php");
+ $accountID = $_SESSION["accountID"];
+
+ $sql = "SELECT memberID,dateApp,timeApp FROM appointment WHERE accountID = ".$accountID."";
+
+$rs = $conn->query($sql);
+$row = $rs->fetch_assoc();
+
+ ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
 	<head>
@@ -52,16 +66,24 @@
 				<span class="char">%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%A0%E0%B8%B2%E0%B8%9E</span>
 			</div>
 			<div id="______13_30__14_00" >
-				<span class="char">%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2 </span> 13:30 -14:00
+				<span class="char">%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2 </span> 
+				<?php
+				
+				$time = $row["timeApp"];
+				$timeSplit = explode("-",$time);
+				echo $timeSplit[0].":00-".$timeSplit[1].":00" ?>
 			</div>
 			<div id="_2________2563" >
-				2 <span class="char">%E0%B8%A1%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%A1 </span> 2563
+			<?php $dateApp =  $row["dateApp"];
+			$date = new DateTime($dateApp);
+				echo $date->format("j F yy");
+			?>
 			</div>
 			<div id="_112" >
-				112
+			<?php echo $row["memberID"] ?>
 			</div>
 			<div id="____________________ek1" >
-				<a style="text-decoration: none; color: white;" href="educatedetails.html"><span class="char">%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A</span>
+				<a style="text-decoration: none; color: white;" href="educatedetails.php"><span class="char">%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A</span>
 				</a></div>
 			<div id="____________ek1" >
 				<a style="text-decoration: none; color: white;" href="login___1.html"><span class="char">%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A</span>
