@@ -55,13 +55,13 @@ div { position: absolute; }
 #ellipse_13 {
 	top: 13px;
 	left: 14px;
-	width: 44px;
-	height: 44px;
-	-ms-border-radius: 23px / 23px;
-	-o-border-radius: 23px / 23px;
-	-moz-border-radius: 23px / 23px;
-	-webkit-border-radius: 23px / 23px;
-	border-radius: 23px / 23px;
+	width: 55px;
+	height: 55px;
+	-ms-border-radius: 50px / 50px;
+	-o-border-radius: 50px / 50px;
+	-moz-border-radius: 50px / 50px;
+	-webkit-border-radius: 50px / 50px;
+	border-radius: 50px / 50px;
 	border: 1px solid #ffffff;
 	background:rgba(255,255,255,255);
 }
@@ -70,8 +70,8 @@ div { position: absolute; }
 #sut {
 	top: 20px;
 	left: 25px;
-	width: 25px;
-	height: 33px;
+	width: 35px;
+	height: 44px;
 }
 
 

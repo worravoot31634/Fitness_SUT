@@ -25,7 +25,15 @@
 
 $rs = $conn->query($sql);
 $row = $rs->fetch_assoc();
-
+if($row==null){
+	$dateApp="ยังไม่เลือก";
+	$memberID = "000000";
+	$time="ยังไม่เลือก";
+}else{
+	$dateApp =  $row["dateApp"];
+	$memberID = $row["memberID"];
+	$time = $row["timeApp"];
+}
  ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
@@ -45,7 +53,7 @@ $row = $rs->fetch_assoc();
 			<img src="skins/bg_sport.png" id="bg_sport" />
 			<div id="rectangle_452"  ></div>
 			<div id="___________" >
-				<a style="text-decoration: none; color: white;" href="home.php"><span class="char">%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99</span>
+				<a style="text-decoration: none; color: white;" href="home.php"><span class="char">คอร์สอบรม</span>
 				</a></div>
 			<div id="ellipse_13"  ></div>
 			<img src="skins/sut.png" id="sut" />
@@ -61,7 +69,7 @@ $row = $rs->fetch_assoc();
 				<br/><span class="char">%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%9F%E0%B8%B4%E0%B8%95%E0%B9%80%E0%B8%99%E0%B8%AA</span>
 			</div>
 			<div id="___________________" >
-				<span class="char">%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%A1<</span><br/>
+				<span class="char">รายละเอียดการอบรม</span><br/>
 			</div>
 			<div id="________________________" >
 				<span class="char">%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%A0%E0%B8%B2%E0%B8%9E</span>
@@ -70,18 +78,25 @@ $row = $rs->fetch_assoc();
 				<span class="char">%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2 </span> 
 				<?php
 				
-				$time = $row["timeApp"];
-				$timeSplit = explode("-",$time);
-				echo $timeSplit[0].":00-".$timeSplit[1].":00" ?>
+				if($time!="ยังไม่เลือก"){
+					$timeSplit = explode("-",$time);
+					echo $timeSplit[0].":00-".$timeSplit[1].":00";
+				}else{
+					echo "<br>".$time;
+				} ?>
 			</div>
 			<div id="_2________2563" >
-			<?php $dateApp =  $row["dateApp"];
-			$date = new DateTime($dateApp);
-				echo $date->format("j")."<span class='char' style='font-size:25px;'>".$date->format(" F ")."</span>".$date->format("yy");
+			<?php if($dateApp!="ยังไม่เลือก"){
+				$dateApp =  $row["dateApp"];
+				$date = new DateTime($dateApp);
+					echo $date->format("j")."<span class='char' style='font-size:23px;'>".$date->format(" F ")."</span>".$date->format("yy");
+			}else{
+				echo $dateApp;
+			}
 			?>
 			</div>
 			<div id="_112" >
-			<?php echo $row["memberID"] ?>
+			<?php echo $memberID ?>
 			</div>
 			<div id="____________________ek1" >
 				<a style="text-decoration: none; color: white;" href="educatedetails.php"><span class="char">%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A</span>

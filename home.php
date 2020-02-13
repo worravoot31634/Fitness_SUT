@@ -14,7 +14,7 @@
 		<img src="skins/bg_sport.png" id="bg_sport">
 		<div id="rectangle_452"></div>
 		<div id="___________">
-			<a style="color:white;text-decoration: none;" href="home.php"><span class="char">คอร์สเรียน</span>
+			<a style="color:white;text-decoration: none;" href="home.php"><span class="char">คอร์สอบรม</span>
 			</a></div>
 		<div id="ellipse_13"></div>
 		<img src="skins/sut.png" id="sut">
@@ -29,7 +29,7 @@
 		</div>
 		
 		<div id="__________________">
-			<span class="char">คอร์สเรียนออนไลน์</span>
+			<span class="char">คอร์สอบรมออนไลน์</span>
 		</div>
 		
 		
@@ -55,7 +55,7 @@
 		
 
 		
-		
+	
 		<div id="___________________">
 			<a style="text-decoration: none; color: white;" href="educatedetails.php"><span class="char">รายละเอียดวันทดสอบ</span>
 			</a></div>
