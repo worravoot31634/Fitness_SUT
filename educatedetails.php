@@ -51,7 +51,8 @@ $row = $rs->fetch_assoc();
 			<img src="skins/sut.png" id="sut" />
 			<div id="rectangle_453"  ></div>
 			<div id="base"  >
-				<button id="base" name="submit"></button>
+				<a href="home.php">
+				<button id="base" name="submit"></button></a>
 			</div>
 			<div id="_______" >
 				<span class="char">%E0%B8%A2%E0%B8%B7%E0%B8%99%E0%B8%A2%E0%B8%B1%E0%B8%99</span>
