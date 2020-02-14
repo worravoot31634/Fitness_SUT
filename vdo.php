@@ -47,20 +47,37 @@ session_start();
 			<img src="skins/sut.png" id="sut" />
 			<div id="videoDiv" style="margin-top: 80px;">
 					<video   id="Video1" width="1280" height="510" controls>
-					<source  id = "videoTrain" src="Uxjaa1.mp4" type="video/mp4">
+					<source  id = "videoTrain" src="Course1.mp4" type="video/mp4">
 				</video>
 			</div>
 			<div id="_______1_" >
-				<span class="char">%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88 </span> 1 
+				<span class="char">บทที่ </span> 1 
 			</div>
+			
 			<div id="listVideo">
 				<a href ="vdo2.php"><img style="cursor: pointer;" onclick = "changeVideo(2)" src="images/EP2.png" id="_4203" />
 					</a>
 			</div>
-			
+			<a href ="vdo4.php"><img src="skins/_468884_pfz4p2_187.png" id="_468884_pfz4p2_187"></a>
+			<div id="playbutton_ek1">
+				<div id="base_ek1"></div>
+				<img src="skins/icon_ek1.png" id="icon_ek1">
 
+			</div>
+			
+			<a href ="vdo3.php"><img src="skins/_2208.png" id="_2208"></a>
+			<a href ="vdo5.php"><img src="skins/og29w80.png" id="og29w80"></a>
 			<div id="_______2" >
-				<span style="color:black;" class="char">%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88 2</span> 
+				<span style="color:black;" class="char">บทที่ 2</span> 
+			</div>
+			<div id="_______3">
+				<span style="color:black;" class="char">บทที่ 3</span>
+			</div>
+			<div id="_______4">
+				<span style="color:black;" class="char">บทที่ 4</span>
+			</div>
+			<div id="_______5">
+				<span style="color:black;" class="char">บทที่ 5</span>
 			</div>
 
 
@@ -69,7 +86,25 @@ session_start();
 				<img src="skins/icon.png" id="icon" />
 
 			</div>
+			<div id="playbutton_ek1"  >
+				<div id="base_ek2"  ></div>
+				<img src="skins/icon_ek2.png" id="icon_ek2" />
 
+			</div>
+
+			<div id="playbutton_ek2">
+				<div id="base_ek3"></div>
+				<img src="skins/icon_ek3.png" id="icon_ek3">
+
+			</div>
+			
+			<div id="playbutton_ek3">
+				<div id="base_ek3"></div>
+				<img src="skins/icon_ek3.png" id="icon_ek3">
+
+			</div>
+
+			
 			
 			
 			
@@ -139,12 +174,13 @@ if($video1 >= 76){
 			var userdata = {
       'time': vid1.currentTime,
       'accountID': <?php echo $_SESSION['accountID'] ?>,
+	  'video': 'video1'
     };
     console.log(userdata);
 
 				$.ajax({
 					type: "POST",
-					url: "updateVideo1.php",
+					url: "updateVideo.php",
 					data: userdata,
 					success: function(data) {
 						console.log(data);
