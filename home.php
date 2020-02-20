@@ -20,9 +20,9 @@
 		<img src="skins/sut.png" id="sut">
 		<a href="vdo.php"><img src="images/EP1.png" id="_686"></a>
 		<a href="vdo2.php"><img src="images/EP2.png" id="_4203"></a>
-		
-		
-		
+		<a href="vdo3.php"><img src="skins/_2208.png" id="_2208"></a>
+		<a href="vdo4.php"><img src="skins/_468884_pfz4p2_187.png" id="_468884_pfz4p2_187"></a>
+		<a href="vdo5.php"><img src="skins/og29w80.png" id="og29w80"></a>
 		
 		<div id="_______1_">
 			<span style="color: black;" class="char">บทที่ 1</span>
@@ -37,6 +37,15 @@
 		<div id="_______2">
 			<span style="color: black;" class="char">บทที่ 2</span>
 		</div>
+		<div id="_______3">
+				<span style="color: black;" class="char">บทที่ 3</span>
+		</div>
+		<div id="_______4">
+				<span style="color: black;" class="char">บทที่ 4</span>
+		</div>	
+		<div id="_______5">
+				<span style="color: black;" class="char">บทที่ 5</span>
+			</div>
 
 		<div id="playbutton">
 			<div id="base"></div>
@@ -49,7 +58,22 @@
 			<img src="skins/icon_ek1.png" id="icon_ek1">
 
 		</div>
+		<div id="playbutton_ek2">
+				<div id="base_ek2"></div>
+				<img src="skins/icon_ek2.png" id="icon_ek2">
+				<img src="skins/icon_ek3.png" id="icon_ek3">
 
+			</div>
+		<div id="playbutton_ek3">
+				<div id="base_ek3"></div>
+				<img src="skins/icon_ek4.png" id="icon_ek4">
+
+			</div>
+		<div id="playbutton_ek4">
+				<div id="base_ek4"></div>
+				<img src="skins/icon_ek5.png" id="icon_ek5">
+
+			</div>
 		
 
 		

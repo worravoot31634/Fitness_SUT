@@ -38,34 +38,34 @@ session_start();
 			<div id="rectangle_454"  ></div>
 			<div id="rectangle_452"  ></div>
 			<div id="___________" >
-				<a style="color:white;text-decoration: none;" href="home.php"><span class="char">คอร์สอบรม</span>
+				<a style="color:white;text-decoration: none;" href="home.php"><span class="char">%E0%B8%84%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99</span>
 				</a></div>
 			<div id="ellipse_13"  ></div>
 			<img src="skins/sut.png" id="sut" />
 			<div id="videoDiv" style="margin-top: 80px;">
 					<video   id="Video2" width="1280" height="510" controls>
-					<source  id = "videoTrain" src="Course2.mp4" type="video/mp4">
+					<source  id = "videoTrain" src="Course4.mp4" type="video/mp4">
 				</video>
 			</div>
 			<div id="_______1_" >
-				<span class="char">%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88 </span> 2 
+				<span class="char">บทที่ </span> 4
 			</div>
 			<div id="listVideo">
-                <a href ="vdo.php"><img style="cursor: pointer;" onclick = "changeVideo(2)" src="images/EP1.png" id="_4203" />
+                <a href ="vdo.php"><img style="cursor: pointer;" src="images/EP1.png" id="_4203" />
                 </a>
-			</div>
-			<a href ="vdo4.php"><img src="skins/_468884_pfz4p2_187.png" id="_468884_pfz4p2_187"></a>
-			<a href ="vdo3.php"><img src="skins/_2208.png" id="_2208"></a>
-			<a href ="vdo5.php"><img src="skins/og29w80.png" id="og29w80"></a>
-
+                <a href ="vdo2.php"><img src="images/EP2.png" id="_2208"></a>
+                <a href ="vdo3.php"><img src="skins/_2208.png" id="_468884_pfz4p2_187"><a>
+			
+                <a href ="vdo5.php"><img src="skins/_468884_pfz4p2_187.png" id="og29w80"></a>
+            </div>
 			<div id="_______2" >
 				<span style="color:black;" class="char">บทที่ 1</span> 
 			</div>
 			<div id="_______3">
-				<span style="color:black;" class="char">บทที่ 3</span>
+				<span style="color:black;" class="char">บทที่ 2</span>
 			</div>
 			<div id="_______4">
-				<span style="color:black;" class="char">บทที่ 4</span>
+				<span style="color:black;" class="char">บทที่ 3</span>
 			</div>
 			<div id="_______5">
 				<span style="color:black;" class="char">บทที่ 5</span>
@@ -95,9 +95,7 @@ session_start();
 			</div>
 			
 			<div id="___________________" >
-				<a href="educatedetails.php" style="color:white;text-decoration: none;">
 				<span class="char">%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A</span>
-</a>
 			</div>
 			<div id="____________ek1" >
 				<a href="login___1.html" style="color:white;text-decoration:none;"><span class="char">ออกจากระบบ</span>
@@ -137,18 +135,20 @@ $video2 = 0;
 
 while($row = $rs->fetch_assoc()) {
 	$video1 = $row['video1'];
-	$video2 = $row['video2'];
+    $video2 = $row['video2'];
+    $video3 = $row['video3'];
+    $video4 = $row['video4'];
 	//echo 'alert("'  . $video1 . '");';
 	
 }
 
-echo "vid2.currentTime=" . $video2 . ";";
+echo "vid2.currentTime=" . $video4 . ";";
 
-if($video2 >= 437){
-    echo 'if (confirm("คุณดูตอนที่ 2 เสร็จแล้ว ต้องการไปยังตอนที่ 3 หรือไม่")){
-		window.location.href = "vdo3.php";";
+if($video4 >= 405){
+    echo 'if (confirm("คุณดูตอนที่ 4 เสร็จแล้ว ต้องการไปยังตอนที่ 5 หรือไม่")){
+		window.location.href = "vdo5.php";
 	}else{
-		vid2.currentTime = 435;
+		vid2.currentTime = 385;
 	}';
 }
 
@@ -162,7 +162,7 @@ vid2.ontimeupdate = function() {
 			var userdata = {
       'time': vid2.currentTime,
       'accountID': <?php echo $_SESSION['accountID'] ?>,
-      'video': 'video2'
+      'video': 'video4'
     };
     console.log(userdata);
 
@@ -182,10 +182,10 @@ vid2.ontimeupdate = function() {
 	}
 
     vid2.onended = function() {
-		if (confirm("คุณดูตอนที่ 2 เสร็จแล้ว ต้องการไปยังตอนที่ 3 หรือไม่")){
-		window.location.href = "vdo3.php";
+		if (confirm("คุณดูตอนที่ 4 เสร็จแล้ว ต้องการไปยังตอนที่ 5 หรือไม่")){
+		window.location.href = "vdo5.php";
 	}else{
-		vid2.currentTime = 435;
+		vid2.currentTime = 385;
 	}
 };
 
